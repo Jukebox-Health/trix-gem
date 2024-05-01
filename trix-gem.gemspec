@@ -18,13 +18,13 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "rails", ["> 4.1"]
+  spec.add_runtime_dependency "rails", ["> 7.0", "< 7.1"]
 
   spec.add_development_dependency "appraisal"
-  spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "formtastic", "~> 3.0"
-  spec.add_development_dependency "simple_form", "~> 4.0"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "formtastic", "~> 5.0"
+  spec.add_development_dependency "simple_form", "~> 5.3.0"
+  spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "rspec-activemodel-mocks"
   spec.add_development_dependency "rubocop", "0.35.1"
